@@ -7,7 +7,7 @@
     <title>Discord Canary</title>
     <authors>Discord Inc.</authors>
     <projectUrl>https://discordapp.com/</projectUrl>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/discord-canary.png</iconUrl>-->
+    <iconUrl>https://cdn.jsdelivr.net/gh/weilbyte/chocolatey-pkg/icons/discord-canary.png</iconUrl>
     <licenseUrl>https://discordapp.com/terms/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>discord-canary discord canary voip chat voice-chat gaming social</tags>
