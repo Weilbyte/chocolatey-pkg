@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>discord-canary</id>
+    <version>0.0.259</version>
+    <owners>weilbyte</owners>
+    <title>Discord Canary</title>
+    <authors>Discord Inc.</authors>
+    <projectUrl>https://discordapp.com/</projectUrl>
+    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/discord-canary.png</iconUrl>-->
+    <licenseUrl>https://discordapp.com/terms/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>discord-canary discord canary voip chat voice-chat gaming social</tags>
+    <summary>Discord Canary is Discord's alpha build</summary>
+    <description>Discord Canary is the alpha build of Discord.     
+
+By using it you get access to new features much sooner than the stable and PTB builds, but it's not as stable.    
+The client auto-updates. </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
