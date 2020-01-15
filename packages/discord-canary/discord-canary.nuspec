@@ -5,6 +5,7 @@
     <version>0.0.259</version>
     <owners>weilbyte</owners>
     <title>Discord Canary</title>
+    <packageSourceUrl>https://github.com/Weilbyte/chocolatey-pkg/tree/master/packages/discord-canary</packageSourceUrl>
     <authors>Discord Inc.</authors>
     <projectUrl>https://discordapp.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/weilbyte/chocolatey-pkg/icons/discord-canary.png</iconUrl>
