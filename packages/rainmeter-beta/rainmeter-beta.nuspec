@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>rainmeter-beta</id>
+    <version>4.4.0.3410</version>
+    <owners>weilbyte</owners>
+    <title>Rainmeter (beta)</title>
+    <packageSourceUrl>https://github.com/Weilbyte/chocolatey-pkg/tree/master/packages/rainmeter-beta</packageSourceUrl>
+    <authors>Rainmeter</authors>
+    <copyright>Rainmeter</copyright>
+    <projectUrl>https://rainmeter.net/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/weilbyte/chocolatey-pkg/icons/rainmeter-beta.png</iconUrl>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-2.0</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>rainmeter beta customization</tags>
+    <summary>Desktop customization utility</summary>
+    <description>Rainmeter allows you to display customizable skins on your desktop, from hardware usage meters to fully functional audio visualizers.
+You are only limited by your imagination and creativity.
+
+This package is the beta branch of Rainmeter. The setup file is the same you would download on the official website.</description>
+		<dependencies>
+		    <dependency id="autohotkey.portable" />
+		</dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
