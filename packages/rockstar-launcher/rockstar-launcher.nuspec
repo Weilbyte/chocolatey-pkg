@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>rockstar-launcher</id>
+    <version>1.0.33.319</version>
+    <owners>weilbyte</owners>
+    <title>Rockstar Games Launcher</title>
+    <packageSourceUrl>https://github.com/Weilbyte/chocolatey-pkg/tree/master/packages/rockstar-launcher</packageSourceUrl>
+    <authors>Rockstar Games, Inc.</authors>
+    <copyright>Rockstar Games, Inc.</copyright>
+    <projectUrl>https://socialclub.rockstargames.com/rockstar-games-launcher</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/weilbyte/chocolatey-pkg/icons/rockstar-launcher.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>rockstar games gtav rdr2 r* rockstargames launcher</tags>
+    <summary>Download and play the latest Rockstar Games PC titles</summary>
+    <description>The Rockstar Games Launcher is a new Windows desktop application that allows you to quickly and easily access your Rockstar Games PC collection in a single place, across both digital and disc-based titles including ones purchased from various other digital stores. You can also use the Launcher to shop for new Rockstar Games PC titles to add to your collection.
+
+The Rockstar Games Launcher comes with a host of features including the addition of cloud save functionality to all supported titles, the ability to keep your Rockstar Games PC library updated automatically, and ways to follow all the latest Rockstar Games news from directly inside the Launcher.
+The setup file is the same you would download on the official website.</description>
+		<dependencies>
+		    <dependency id="autohotkey.portable" />
+		</dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
