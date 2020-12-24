@@ -1,13 +1,11 @@
-$ErrorActionPreference = 'Stop'; 
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$packageArgs = @{
-  packageName   = $env:ChocolateyPackageName
-  softwareName  = 'Rockstar Games Launcher'
-  fileType      = 'exe'
-  file          = (Get-UninstallRegistryKey -SoftwareName 'Rockstar Games Launcher').UninstallString.Trim('"')
-  validExitCodes= @(0)
-}
+$ErrorActionPreference  = 'Stop'; 
+$toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-Start-Process 'AutoHotkey' "$toolsDir\uninstall_driver.ahk"
+. "$toolsDir/funcs.ps1"
 
-Uninstall-ChocolateyPackage @packageArgs
+Remove-Item (Get-UninstallRegistryKey -SoftwareName 'Rockstar Games Launcher').InstallLocation.Trim('"') -Recurse -ErrorAction Ignore
+Remove-ARPEntry
+Remove-LauncherRegistry
+
+Remove-Item "C:\Users\$env:userName\Desktop\Rockstar Games Launcher.lnk" -Recurse -ErrorAction Ignore
+Remove-Item "C:\Users\$env:userName\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Rockstar Games\Rockstar Games Launcher.lnk" -Recurse -ErrorAction Ignore

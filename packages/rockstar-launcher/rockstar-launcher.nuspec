@@ -17,9 +17,6 @@
 
 The Rockstar Games Launcher comes with a host of features including the addition of cloud save functionality to all supported titles, the ability to keep your Rockstar Games PC library updated automatically, and ways to follow all the latest Rockstar Games news from directly inside the Launcher.
 The setup file is the same you would download on the official website.</description>
-		<dependencies>
-		    <dependency id="autohotkey.portable" />
-		</dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
